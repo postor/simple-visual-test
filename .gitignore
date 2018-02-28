@@ -1,0 +1,4 @@
+/node_modules
+/tests/__image_snapshots__
+/tests/config.json
+/yarn.lock
