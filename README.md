@@ -42,4 +42,4 @@ npm run update
 npm run test
 ```
 
-[screenshot](./images/screenshot.png)
+![screenshot](./images/screenshot.png)
