@@ -2,6 +2,20 @@
 
 make visual test simple | 让显示测试更简单
 
+simple path
+
+```
+git clone https://github.com/postor/simple-visual-test.git
+cd simple-visual-test
+npm install
+node generate.js --crawl=https://im.qq.com/
+npm run update
+
+# after site change, test can detect
+npm run test
+```
+
+
 ## prepare | 准备
 
 ```
@@ -35,6 +49,10 @@ or you know urls to test, then just write `tests/config.json` like
 ```
 npm run update
 ```
+
+you can use your design replace images in `tests\__image_snapshots__` and perform TDD
+
+或者你可以用你的设计图替换
 
 ## test | 运行测试
 
