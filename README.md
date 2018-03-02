@@ -2,7 +2,7 @@
 
 make visual test simple | 让显示测试更简单
 
-simple path
+simple path | 最简使用
 
 ```
 git clone https://github.com/postor/simple-visual-test.git
@@ -11,7 +11,7 @@ npm install
 node generate.js --crawl=https://im.qq.com/
 npm run update
 
-# after site change, test can detect
+# run this every day and get the change when it happen | 每天运行这一段就能获得网站的显示更新
 npm run test
 ```
 
