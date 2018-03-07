@@ -12,7 +12,8 @@ node generate.js --crawl=https://im.qq.com/
 npm run update
 
 # run this every day and get the change when it happen | 每天运行这一段就能获得网站的显示更新
-npm run test
+sudo crontab -e
+# 30 3 * * * cd /path/to/project && node cron-job.js
 ```
 
 
