@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const launchConfig = require('./launch') || {}
+const launchConfig = require('./getLaunchConfig')()
 
 const getCrawlAll = (async () => {
   const dic = {}

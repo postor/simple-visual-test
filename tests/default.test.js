@@ -1,7 +1,7 @@
 
 const Differencify = require('differencify').default
 const { baseUrl, urls } = require('./config')
-const launchConfig = require('./launch') || {}
+const launchConfig = require('../getLaunchConfig')()
 
 describe('url-', () => {
   urls.forEach(async (url, i) => {
