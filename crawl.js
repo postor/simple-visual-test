@@ -1,9 +1,10 @@
 const puppeteer = require('puppeteer');
+const launchConfig = require('./launch') || {}
+
 const getCrawlAll = (async () => {
   const dic = {}
   // Init Pupeteer
-  const executablePath = `C:\\Users\\josh\\AppData\\Local\\Google\\Chrome SxS\\Application\\chrome.exe`
-  const browser = await puppeteer.launch({ headless: false, executablePath })
+  const browser = await puppeteer.launch(launchConfig)
   const page = await browser.newPage() // New Page to be manipulated
 
   return async (baseUrl) => {

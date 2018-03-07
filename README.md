@@ -23,6 +23,20 @@ git clone https://github.com/postor/simple-visual-test.git
 cd simple-visual-test
 npm install
 ```
+if you are inside GFW, you may have problem installing puppeteer, you need to | 如果在国内，可能是没法正常安装puppeteer的，你需要:
+
+- set environment varible  `PUPPETEER_SKIP_CHROMIUM_DOWNLOAD` to `true` | 设置环境变量 `PUPPETEER_SKIP_CHROMIUM_DOWNLOAD` 为 `true`
+- add a `launch.json` in `simple-visual-test` folder and set value `executablePath` to your chrome.exe path | 在 `simple-visual-test` 目录下增加 `launch.json` 文件，并设置 `executablePath` 的值为你的 chrome.exe 的完整路径
+
+launch.json, you can add other launch options refer https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#puppeteerlaunchoptions 
+
+launch.json, 你可以添加其他的启动参数，参考 https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#puppeteerlaunchoptions 
+
+```
+{
+  "executablePath":"C:\\Users\\josh\\AppData\\Local\\Google\\Chrome SxS\\Application\\chrome.exe",
+}
+```
 
 ## generate config | 生成配置
 
