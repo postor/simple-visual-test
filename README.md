@@ -59,7 +59,7 @@ or you know urls to test, then just write `tests/config.json` like
 }
 ```
 
-on linux you may run into problems launching chrome, you may need libs installed
+on linux you may run into problems launching chrome, you may need libs installed | 在linux上可能需要一些库来运行chrome
 
 ```
 sudo apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 \
@@ -68,7 +68,7 @@ libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxc
 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 \
 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
 ```
-and if you are using root , a launch config is needed, launch.json
+and if you are using root , a launch config is needed, launch.json | 如果你使用root账号还需要配置launch参数
 
 ```
 {
@@ -85,7 +85,7 @@ npm run update
 
 you can use your design replace images in `tests\__image_snapshots__` and perform TDD
 
-或者你可以用你的设计图替换
+或者你可以用你的设计图替换 `tests\__image_snapshots__` 中的图片，来实现TDD
 
 ## test | 运行测试
 
