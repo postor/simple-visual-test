@@ -1,5 +1,5 @@
 
-const Differencify = require('differencify').default
+const Differencify = require('differencify')
 const { baseUrl, urls } = require('./config')
 const launchConfig = require('../getLaunchConfig')()
 
